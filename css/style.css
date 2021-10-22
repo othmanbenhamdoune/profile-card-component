@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root {
+    --dark-cyan:hsl(185, 75%, 39%);
+    --dark-blue:hsl(229, 23%, 23%);
+    --dark-gray:hsl(0, 0%, 59%);
+    --grayish-blue:hsl(227, 10%, 46%);
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans";
+}
+body{
+    background-color: var(--dark-cyan);
+    background-image: url(/images/bg-pattern-top.svg);
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    min-height:100vh;
+    flex-direction: column;
+    
+}
+.container {
+    width:350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.container .top {
+    width:100%;
+    height: 40%;
+    background-image: url(/images/bg-pattern-card.svg);
+    border-radius:20px 20px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+.container .top img {
+    transform:translateY(40px);
+    border-radius:50px;
+    border:6px solid white;
+}
+.container .buttom{
+    background-color: white;
+    width: 100%;
+    height:60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    border-radius: 0px 0px 20px 20px;
+}
+.container .buttom .personal-info {
+    text-align: center;
+}
+.personal-info .name {
+    margin-top: 40px;
+    font-size:18px;
+    font-weight: 700;
+    color:var(--dark-blue);
+}
+.personal-info .name .age{
+    font-size: 18px;
+    color: var(--grayish-blue);
+}
+.personal-info p {
+    margin-top: 10px;
+    font-size: 15px;
+    color: var(--grayish-blue);
+    
+}
+.personal-info .name .age, .personal-info p {
+    font-weight:400;
+    
+}
+.container .buttom .stats {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.container .buttom .stats p{
+    align-self: flex-end;
+}
+.buttom .stats p {
+    font-size: 18px;
+    font-weight: 700;
+    color:var(--dark-blue);
+}
+.buttom .stats span {
+    font-size:12px;
+    font-weight: 400;
+    color: var(--grayish-blue);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* mobile */
+@media screen and (max-width:375px){
+    body {
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        min-height:100vh;
+    }
+    .container{
+        width: 300px;
+        height: 500px;
+    }
+}
