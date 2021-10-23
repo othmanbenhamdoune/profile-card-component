@@ -104,8 +104,8 @@ body{
 /* mobile */
 @media screen and (max-width:375px){
     body {
-        background: url("/images/bg-pattern-top.svg") no-repeat left -700px top -700px,
-      url("/images/bg-pattern-bottom.svg") no-repeat right -700px bottom -600px var(--dark-cyan);
+        background: url("/profile-card-component/images/bg-pattern-top.svg") no-repeat left -700px top -700px,
+      url("/profile-card-component/images/bg-pattern-bottom.svg") no-repeat right -700px bottom -600px var(--dark-cyan);
         display:flex;
         justify-content: center;
         align-items:center;
