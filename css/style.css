@@ -12,8 +12,8 @@
     font-family: "Kumbh Sans";
 }
 body{
-    background:url("/images/bg-pattern-top.svg") no-repeat left -900px top -550px, 
-    url("/images/bg-pattern-bottom.svg") no-repeat right -700px bottom -1100px var(--dark-cyan);
+    background:url("/profile-card-component/images/bg-pattern-top.svg") no-repeat left -900px top -550px, 
+    url("/profile-card-component/images/bg-pattern-bottom.svg") no-repeat right -700px bottom -1100px var(--dark-cyan);
     background-size: cover;
     display:flex;
     justify-content: center;
